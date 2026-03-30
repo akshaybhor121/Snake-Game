@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@300;400;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  
+  --color-hardware-bg: #151619;
+  --color-hardware-surround: #E6E6E6;
+  --color-hardware-text: #FFFFFF;
+  --color-hardware-muted: #8E9299;
+  --color-hardware-accent: #FF4444;
+}
+
+@layer base {
+  body {
+    @apply bg-hardware-surround text-hardware-bg font-sans antialiased;
+  }
+}
+
+/* Hardware Aesthetic Utilities */
+.hardware-widget {
+  @apply bg-hardware-bg text-hardware-text rounded-xl shadow-2xl border border-black/20;
+}
+
+.radial-track {
+  @apply border border-dashed border-hardware-muted rounded-full;
+}
+
+.status-label {
+  @apply font-mono text-[10px] uppercase tracking-widest text-hardware-muted;
+}
+
+.data-value {
+  @apply font-mono text-xs tracking-tight;
+}
+
+.glow-red {
+  box-shadow: 0 0 10px rgba(255, 68, 68, 0.4);
+}
+
+.grid-line {
+  @apply border-hardware-muted/10;
+}
