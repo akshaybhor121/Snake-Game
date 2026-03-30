@@ -6,7 +6,8 @@
 
 This contains everything you need to run your app locally.
 
-View your app in AI Studio: https://ai.studio/apps/7b075f07-b81a-470b-897d-67e1bcd6a317
+View your app here https://akshay-beats-673771640520.us-west1.run.app/
+
 
 ## Run Locally
 
